@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071421" />
+    <title>Khang Minh | Giải pháp máy nén khí, Chiller & thiết bị công nghiệp</title>
+    <meta name="description" content="Công ty TNHH Thiết Bị Công Nghiệp Khang Minh cung cấp máy nén khí trục vít, hệ thống Chiller, điện công nghiệp, máy phát điện và hệ thống điều hòa công nghiệp." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#071421',
+              navy: '#0b2235',
+              steel: '#1b4965',
+              amber: '#f59e0b',
+              line: 'rgba(148, 181, 199, .18)',
+            },
+            fontFamily: { sans: ['Be Vietnam Pro', 'sans-serif'] },
+            boxShadow: { card: '0 18px 50px rgba(0, 0, 0, .22)' },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      :root { color-scheme: dark; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Be Vietnam Pro', sans-serif; background: #071421; color: #e8f0f4; line-height: 1.75; }
+      h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.035em; line-height: 1.2; }
+      .transition-smooth { transition: all 300ms ease-in-out; }
+      .hover-lift { transition: all 300ms ease-in-out; }
+      .hover-lift:hover { transform: translateY(-6px); border-color: #DF6B33; box-shadow: 0 12px 28px rgba(223, 107, 51, .16); }
+      .nav-link { position: relative; transition: color 300ms ease-in-out; }
+      .nav-link::after { content: ''; position: absolute; left: 0; bottom: -.35rem; width: 100%; height: 2px; background: #DF6B33; transform: scaleX(0); transform-origin: left; transition: transform 300ms ease-in-out; }
+      .nav-link:hover { color: #DF6B33; }
+      .nav-link:hover::after { transform: scaleX(1); }
+      .section-shell > .reveal:first-child { animation-name: fadeInUp; }
+      @keyframes fadeInUp { from { opacity: 0; transform: translate3d(0, 24px, 0); } to { opacity: 1; transform: none; } }
+      .social-link { transition: all 300ms ease-in-out; }
+      .social-link:hover { transform: scale(1.2); color: #DF6B33; }
+      .cta-button { transition: all 300ms ease-in-out; }
+      .cta-button:hover { transform: scale(1.04); background: #fbbf24; box-shadow: 0 10px 26px rgba(223, 107, 51, .35); }
+      .hero-title { animation: heroTitleIn .9s cubic-bezier(.22, 1, .36, 1) both; }
+      .hero-title-accent { display: inline-block; background: linear-gradient(110deg, #f59e0b 0%, #fcd34d 35%, #fff7ed 50%, #f59e0b 65%, #fbbf24 100%); background-size: 220% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: titleShimmer 4s linear infinite; }
+      @keyframes heroTitleIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes titleShimmer { to { background-position: 220% center; } }
+      @media (prefers-reduced-motion: reduce) { .hero-title, .hero-title-accent { animation: none; } }
+      .blueprint { background-image: linear-gradient(rgba(110,166,192,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(110,166,192,.07) 1px, transparent 1px); background-size: 42px 42px; }
+      .hero-grid { background: radial-gradient(circle at 80% 20%, rgba(245,158,11,.16), transparent 24rem), linear-gradient(135deg, #071421 0%, #0b2235 55%, #071421 100%); }
+      .glass { background: rgba(13, 39, 57, .72); border: 1px solid rgba(148,181,199,.18); backdrop-filter: blur(14px); }
+      .section-shell { max-width: 1180px; margin: 0 auto; }
+      .nav-scrolled { background: rgba(7,20,33,.94) !important; border-color: rgba(148,181,199,.18) !important; backdrop-filter: blur(16px); }
+      .reveal { opacity: 0; }
+      .reveal.is-visible { opacity: 1; }
+      .animate__animated.reveal { opacity: 1; }
+      .slide { opacity: 0; visibility: hidden; transition: opacity .8s ease, visibility .8s ease; }
+      .slide.active { opacity: 1; visibility: visible; }
+      .accordion-content { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+      .accordion-item.active .accordion-content { max-height: 220px; }
+      .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+      input, select, textarea { color-scheme: dark; }
+      :focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300">
+      <nav class="section-shell flex items-center justify-between px-5 py-4 lg:px-0" aria-label="Điều hướng chính">
+        <a href="#top" class="flex items-center gap-3" aria-label="Khang Minh - Trang chủ">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber text-ink"><i data-lucide="factory" class="h-5 w-5"></i></span>
+          <span class="text-lg font-extrabold tracking-tight text-white">KHANG <span class="text-amber">MINH</span></span>
+        </a>
+        <div class="hidden items-center gap-7 md:flex">
+          <a href="#about" class="nav-link text-sm text-slate-300">Giới thiệu</a>
+          <a href="#products" class="nav-link text-sm text-slate-300">Sản phẩm & dịch vụ</a>
+          <a href="#industries" class="nav-link text-sm text-slate-300">Ưu thế</a>
+          <a href="#process" class="nav-link text-sm text-slate-300">Tầm nhìn & sứ mệnh</a>
+          <a href="#partners" class="nav-link text-sm text-slate-300">Khách hàng</a>
+          <a href="#faq" class="nav-link text-sm text-slate-300">FAQ</a>
+        </div>
+        <a href="#contact" class="hidden rounded-full bg-amber px-5 py-2.5 text-sm font-bold text-ink transition hover:bg-amber-300 md:inline-flex">Nhận tư vấn <i data-lucide="arrow-up-right" class="ml-2 h-4 w-4"></i></a>
+        <button id="mobile-menu-button" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 bg-white/5 md:hidden" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-menu"><i id="menu-icon" data-lucide="menu" class="h-5 w-5"></i></button>
+      </nav>
+      <div id="mobile-menu" class="hidden border-t border-white/10 bg-ink/95 px-5 py-4 md:hidden">
+        <div class="flex flex-col gap-1">
+          <a href="#about" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">Giới thiệu</a>
+          <a href="#products" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">Sản phẩm & dịch vụ</a>
+          <a href="#industries" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">Ưu thế</a>
+          <a href="#process" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">Tầm nhìn & sứ mệnh</a>
+          <a href="#partners" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">Khách hàng</a>
+          <a href="#faq" class="mobile-link rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5">FAQ</a>
+          <a href="#contact" class="mobile-link mt-2 rounded-full bg-amber px-4 py-3 text-center font-bold text-ink">Nhận tư vấn</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-grid blueprint overflow-hidden px-5 pb-20 pt-32 lg:pb-28 lg:pt-44">
+        <div class="section-shell grid items-center gap-14 lg:grid-cols-[1.05fr_.95fr]">
+          <div class="reveal">
+            <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-4 py-2 text-xs font-bold uppercase tracking-[.18em] text-amber"><span class="h-2 w-2 rounded-full bg-amber"></span> Giải pháp toàn diện cho hệ thống công nghiệp</p>
+            <h1 class="hero-title max-w-3xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">Tối ưu hệ thống<br /><span class="hero-title-accent">nén khí & làm lạnh.</span></h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">Khang Minh cung cấp máy nén khí trục vít, hệ thống Chiller, điện công nghiệp, máy phát điện và hệ thống điều hòa công nghiệp — cùng dịch vụ kỹ thuật phù hợp với nhu cầu vận hành.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row"><a href="#contact" class="cta-button inline-flex items-center justify-center rounded-full bg-amber px-6 py-3.5 font-bold text-ink">Gửi nhu cầu tư vấn <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i></a><a href="#products" class="inline-flex items-center justify-center rounded-full border border-slate-500 px-6 py-3.5 font-semibold text-white transition hover:border-amber hover:text-amber">Xem danh mục thiết bị</a></div>
+            <div class="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-sm text-slate-400"><span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-amber"></i>Kinh nghiệm nhiều năm</span><span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-amber"></i>Hỗ trợ kỹ thuật 24/7</span></div>
+          </div>
+          <div class="reveal relative">
+            <div class="absolute -inset-5 rounded-[2rem] bg-amber/10 blur-3xl"></div>
+            <div class="relative overflow-hidden rounded-[1.75rem] border border-steel/70 bg-navy p-2 shadow-card"><div class="hero-slideshow relative h-[390px] sm:h-[470px]"><div class="slide active absolute inset-0"><img src="Hero section picture/1789304436341_1508873180303942067_8090988931330555147_2d0caea253734466134fd76a2cfeb670.jpg" alt="Thiết bị công nghiệp Khang Minh" class="h-full w-full rounded-2xl object-cover" fetchpriority="high" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436370_1508873180303942067_8090988931330555147_172518b5cfece2ffbe313365a8e0332f.jpg" alt="Hệ thống máy nén khí công nghiệp" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436361_1508873180303942067_8090988931330555147_02b8abfdcde61a8935316c6ea898b0fa.jpg" alt="Hệ thống làm lạnh Chiller cho nhà máy" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436328_1508873180303942067_8090988931330555147_d7ec50db0560297ba09e75548fb50fb1.jpg" alt="Hệ thống làm lạnh và thiết bị công nghiệp" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436290_1508873180303942067_8090988931330555147_0b1914a6b588a7eb2e4a26ba2e0a9963.jpg" alt="Máy móc và dây chuyền sản xuất công nghiệp" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436314_1508873180303942067_8090988931330555147_a2bac099ecd5a2c029b6889bc67896c8.jpg" alt="Thiết bị kỹ thuật trong nhà máy" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="slide absolute inset-0"><img src="Hero section picture/1789304436352_1508873180303942067_8090988931330555147_88440f9125783385fd6115e966c08182.jpg" alt="Hệ thống thiết bị công nghiệp" class="h-full w-full rounded-2xl object-cover" loading="lazy" /></div><div class="absolute bottom-6 left-6 right-6 z-10 glass rounded-xl p-4"><p class="text-xs uppercase tracking-[.15em] text-amber">Kết nối nhu cầu với giải pháp</p><p class="mt-1 font-semibold text-white">Hỗ trợ nhanh chóng — đồng hành 24/7</p></div><div class="absolute bottom-3 right-4 z-20 flex gap-2" role="tablist" aria-label="Hình ảnh giới thiệu"><button type="button" class="slide-dot active h-2.5 w-2.5 rounded-full bg-amber" data-slide="0" aria-label="Xem hình 1"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="1" aria-label="Xem hình 2"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="2" aria-label="Xem hình 3"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="3" aria-label="Xem hình 4"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="4" aria-label="Xem hình 5"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="5" aria-label="Xem hình 6"></button><button type="button" class="slide-dot h-2.5 w-2.5 rounded-full bg-white/50" data-slide="6" aria-label="Xem hình 7"></button></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-white/10 bg-navy/70 px-5 py-8"><div class="section-shell grid gap-6 sm:grid-cols-3"><div class="flex items-start gap-3"><i data-lucide="clock-3" class="mt-1 h-5 w-5 text-amber"></i><div><h3 class="font-bold text-white">Hỗ trợ 24/7</h3><p class="mt-1 text-sm text-slate-400">Tiếp nhận và phản hồi nhu cầu nhanh chóng.</p></div></div><div class="flex items-start gap-3"><i data-lucide="badge-check" class="mt-1 h-5 w-5 text-amber"></i><div><h3 class="font-bold text-white">Phụ tùng chính hãng</h3><p class="mt-1 text-sm text-slate-400">Sản phẩm và linh kiện theo tiêu chuẩn phù hợp.</p></div></div><div class="flex items-start gap-3"><i data-lucide="trending-down" class="mt-1 h-5 w-5 text-amber"></i><div><h3 class="font-bold text-white">Tối ưu chi phí</h3><p class="mt-1 text-sm text-slate-400">Giải pháp cân bằng hiệu suất và ngân sách.</p></div></div></div></section>
+
+      <section id="about" class="section-shell grid gap-12 px-5 py-12 md:py-20 lg:grid-cols-[.8fr_1.2fr] lg:px-0"><div class="reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Về Khang Minh</p><h2 class="text-3xl font-black leading-tight text-white md:text-4xl">Hiểu bài toán vận hành trước khi chọn thiết bị.</h2></div><div class="reveal"><p class="text-lg leading-8 text-slate-300">Khang Minh hướng đến việc cung cấp thiết bị công nghiệp và giải pháp kỹ thuật theo nhu cầu thực tế của từng doanh nghiệp. Từ thông tin hệ thống, môi trường làm việc đến yêu cầu bảo trì, mỗi cuộc trao đổi là cơ sở để tìm ra phương án phù hợp hơn.</p><p class="mt-5 leading-7 text-slate-400">Với đội ngũ kỹ sư và kỹ thuật viên được đào tạo bài bản, Khang Minh hướng đến sản phẩm, dịch vụ chất lượng và khả năng đáp ứng nhu cầu đa dạng của khách hàng trong nhiều lĩnh vực sản xuất.</p><a href="#contact" class="mt-7 inline-flex items-center font-bold text-amber hover:text-amber-300">Trao đổi nhu cầu của bạn <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i></a></div></section>
+
+      <section id="products" class="blueprint border-y border-white/10 px-5 py-12 md:py-20"><div class="section-shell"><div class="mb-12 max-w-2xl reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Danh mục tham khảo</p><h2 class="text-3xl font-black text-white md:text-4xl">Thiết bị cho nhiều nhu cầu kỹ thuật</h2><p class="mt-4 leading-7 text-slate-400">Danh mục dịch vụ của Khang Minh tập trung vào máy nén khí, Chiller và các thiết bị công nghiệp phục vụ sản xuất.</p></div><div class="grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="zap" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Điện công nghiệp</h3><p class="mt-3 text-sm leading-6 text-slate-400">Thiết bị đóng cắt, bảo vệ và phụ trợ cho hệ thống điện.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="bot" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Tự động hóa</h3><p class="mt-3 text-sm leading-6 text-slate-400">Giải pháp điều khiển và thiết bị hỗ trợ tối ưu quy trình.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="gauge" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Đo lường & điều khiển</h3><p class="mt-3 text-sm leading-6 text-slate-400">Thiết bị đo, cảm biến và giải pháp theo dõi thông số vận hành.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="wind" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Máy nén khí trục vít</h3><p class="mt-3 text-sm leading-6 text-slate-400">Thiết bị và giải pháp cho hệ thống khí nén trong sản xuất.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="snowflake" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Hệ thống Chiller</h3><p class="mt-3 text-sm leading-6 text-slate-400">Giải pháp máy làm lạnh nước cho yêu cầu làm mát công nghiệp.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="zap" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Hệ thống điện công nghiệp</h3><p class="mt-3 text-sm leading-6 text-slate-400">Thiết bị và phương án hỗ trợ hệ thống điện cho nhà máy.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="battery-charging" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Máy phát điện</h3><p class="mt-3 text-sm leading-6 text-slate-400">Thiết bị dự phòng cho nhu cầu duy trì hoạt động sản xuất.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="fan" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Hệ thống điều hòa công nghiệp</h3><p class="mt-3 text-sm leading-6 text-slate-400">Giải pháp điều hòa phù hợp cho không gian và quy trình công nghiệp.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+        <article class="reveal hover-lift glass rounded-2xl border border-transparent p-6"><div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/10 text-amber"><i data-lucide="wrench" class="h-6 w-6"></i></div><h3 class="text-xl font-bold text-white">Dịch vụ kỹ thuật</h3><p class="mt-3 text-sm leading-6 text-slate-400">Hỗ trợ kỹ thuật, phụ tùng chính hãng và đáp ứng nhanh chóng.</p><a href="#contact" class="mt-5 inline-flex text-sm font-bold text-amber">Tìm hiểu thêm <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i></a></article>
+      </div></div></section>
+
+      <section id="industries" class="section-shell px-5 py-12 md:py-20 lg:px-0"><div class="mb-12 max-w-2xl reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Ưu thế cạnh tranh</p><h2 class="text-3xl font-black text-white md:text-4xl">Năng lực tạo nên sự khác biệt</h2></div><div class="grid gap-4 md:gap-6 md:grid-cols-2 lg:grid-cols-3"><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">01</span><h3 class="mt-6 text-xl font-bold text-white">Kinh nghiệm nhiều năm</h3><p class="mt-3 text-sm leading-6 text-slate-400">Đội ngũ kỹ sư, kỹ thuật viên được đào tạo bài bản trong ngành thiết bị công nghiệp.</p></div><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">02</span><h3 class="mt-6 text-xl font-bold text-white">Hỗ trợ 24/7</h3><p class="mt-3 text-sm leading-6 text-slate-400">Dịch vụ kỹ thuật đáp ứng nhanh chóng, sẵn sàng hỗ trợ mọi lúc.</p></div><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">03</span><h3 class="mt-6 text-xl font-bold text-white">Hệ thống Chiller & làm lạnh</h3><p class="mt-3 text-sm leading-6 text-slate-400">Giải pháp làm lạnh công nghiệp cho nhà máy sản xuất và dây chuyền.</p></div><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">04</span><h3 class="mt-6 text-xl font-bold text-white">Hệ thống khí nén</h3><p class="mt-3 text-sm leading-6 text-slate-400">Máy nén khí trục vít và thiết bị phục vụ nhu cầu khí nén công nghiệp.</p></div><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">05</span><h3 class="mt-6 text-xl font-bold text-white">Phụ tùng chính hãng</h3><p class="mt-3 text-sm leading-6 text-slate-400">Cung cấp linh kiện, phụ tùng chính hãng với giá cả cạnh tranh.</p></div><div class="reveal hover-lift rounded-2xl border border-white/10 bg-white/[.03] p-6"><span class="text-3xl text-amber">06</span><h3 class="mt-6 text-xl font-bold text-white">Đồng hành lâu dài</h3><p class="mt-3 text-sm leading-6 text-slate-400">Đã và đang hợp tác cùng nhiều khách hàng và công ty lớn trên cả nước.</p></div></div></section>
+
+      <section id="process" class="blueprint border-y border-white/10 px-5 py-12 md:py-20"><div class="section-shell grid gap-12 lg:grid-cols-[.7fr_1.3fr]"><div class="reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Tầm nhìn & sứ mệnh</p><h2 class="text-3xl font-black text-white md:text-4xl">Đồng hành để doanh nghiệp phát triển bền vững</h2><p class="mt-5 leading-7 text-slate-400">Khang Minh hướng đến vị trí đơn vị hàng đầu trong cung cấp và giải pháp kỹ thuật cho hệ thống máy nén khí, Chiller và thiết bị công nghiệp tại khu vực miền Nam.</p></div><div class="space-y-4"><div class="reveal hover-lift flex gap-4 md:gap-6 rounded-2xl border border-white/10 bg-navy/80 p-5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber font-bold text-ink">01</span><div><h3 class="font-bold text-white">Chất lượng</h3><p class="mt-1 text-sm text-slate-400">Cam kết mang đến sản phẩm và dịch vụ đạt tiêu chuẩn.</p></div></div><div class="reveal hover-lift flex gap-4 md:gap-6 rounded-2xl border border-white/10 bg-navy/80 p-5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber font-bold text-ink">02</span><div><h3 class="font-bold text-white">Uy tín</h3><p class="mt-1 text-sm text-slate-400">Đặt chữ tín lên hàng đầu trong mọi hoạt động.</p></div></div><div class="reveal hover-lift flex gap-4 md:gap-6 rounded-2xl border border-white/10 bg-navy/80 p-5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber font-bold text-ink">03</span><div><h3 class="font-bold text-white">Đổi mới</h3><p class="mt-1 text-sm text-slate-400">Không ngừng cải tiến và ứng dụng công nghệ tiên tiến.</p></div></div><div class="reveal hover-lift flex gap-4 md:gap-6 rounded-2xl border border-white/10 bg-navy/80 p-5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber font-bold text-ink">04</span><div><h3 class="font-bold text-white">Hợp tác</h3><p class="mt-1 text-sm text-slate-400">Đồng hành cùng khách hàng và đối tác cùng phát triển.</p></div></div></div></div></section>
+
+      <section id="partners" class="blueprint border-y border-white/10 px-5 py-12 md:py-20"><div class="section-shell"><div class="mx-auto max-w-2xl text-center reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Khách hàng & đối tác</p><h2 class="text-3xl font-black text-white md:text-4xl">Đồng hành cùng doanh nghiệp trên toàn quốc</h2><p class="mt-5 leading-7 text-slate-400">Nhiều khách hàng đã và đang tin tưởng, hợp tác lâu dài cùng Khang Minh. Sự hài lòng của khách hàng luôn là trung tâm trong mọi hoạt động của chúng tôi.</p></div><div class="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-white p-3 shadow-card reveal"><img src="logos-khach-hang.png.png" alt="Logo khách hàng và đối tác của Khang Minh" class="h-auto w-full rounded-2xl object-contain" loading="lazy" /></div><p class="mx-auto mt-6 max-w-3xl text-center text-sm text-slate-400">Danh sách logo khách hàng và đối tác được trình bày theo hồ sơ giới thiệu của Khang Minh.</p></div></section>
+
+      <section id="faq" class="section-shell px-5 py-12 md:py-20 lg:px-0"><div class="mb-12 text-center reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">FAQ</p><h2 class="text-3xl font-black text-white md:text-4xl">Câu hỏi thường gặp</h2></div><div class="mx-auto max-w-3xl space-y-3"><div class="accordion-item active rounded-2xl border border-white/10 bg-white/[.03] p-1 reveal"><button class="accordion-trigger flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="true" aria-controls="faq-answer-1"><span class="font-semibold text-white">Tôi cần cung cấp thông tin gì để được tư vấn?</span><i data-lucide="chevron-down" class="accordion-icon h-5 w-5 shrink-0 text-amber transition-transform"></i></button><div id="faq-answer-1" class="accordion-content px-5 pb-4"><p class="text-sm leading-6 text-slate-400">Bạn có thể gửi tên thiết bị, hình ảnh nhãn máy, catalogue hoặc mô tả ngắn về mục đích sử dụng và điều kiện vận hành.</p></div></div><div class="accordion-item rounded-2xl border border-white/10 bg-white/[.03] p-1 reveal"><button class="accordion-trigger flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false" aria-controls="faq-answer-2"><span class="font-semibold text-white">Khang Minh có tư vấn thiết bị thay thế không?</span><i data-lucide="chevron-down" class="accordion-icon h-5 w-5 shrink-0 text-amber transition-transform"></i></button><div id="faq-answer-2" class="accordion-content px-5 pb-4"><p class="text-sm leading-6 text-slate-400">Việc tư vấn thay thế được thực hiện dựa trên thông số và điều kiện tương thích. Vui lòng gửi thông tin thiết bị hiện tại để trao đổi cụ thể.</p></div></div><div class="accordion-item rounded-2xl border border-white/10 bg-white/[.03] p-1 reveal"><button class="accordion-trigger flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false" aria-controls="faq-answer-3"><span class="font-semibold text-white">Khang Minh có cung cấp dịch vụ lắp đặt và bảo trì không?</span><i data-lucide="chevron-down" class="accordion-icon h-5 w-5 shrink-0 text-amber transition-transform"></i></button><div id="faq-answer-3" class="accordion-content px-5 pb-4"><p class="text-sm leading-6 text-slate-400">Khang Minh cung cấp dịch vụ kỹ thuật và hỗ trợ theo nhu cầu thực tế của từng hệ thống. Vui lòng gửi thông tin thiết bị để chúng tôi trao đổi cụ thể về phạm vi hỗ trợ.</p></div></div><div class="accordion-item rounded-2xl border border-white/10 bg-white/[.03] p-1 reveal"><button class="accordion-trigger flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false" aria-controls="faq-answer-4"><span class="font-semibold text-white">Thời gian phản hồi yêu cầu tư vấn và báo giá là bao lâu?</span><i data-lucide="chevron-down" class="accordion-icon h-5 w-5 shrink-0 text-amber transition-transform"></i></button><div id="faq-answer-4" class="accordion-content px-5 pb-4"><p class="text-sm leading-6 text-slate-400">Sau khi tiếp nhận đầy đủ thông tin, đội ngũ Khang Minh sẽ phản hồi trong thời gian sớm nhất. Thời gian báo giá phụ thuộc vào yêu cầu kỹ thuật và nhóm thiết bị cần tư vấn.</p></div></div></div></section>
+
+      <section id="contact" class="section-shell px-5 pb-24 lg:px-0"><div class="overflow-hidden rounded-[2rem] border border-amber/30 bg-gradient-to-br from-[#12334a] to-[#091a29] p-6 shadow-card md:p-10"><div class="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center"><div class="reveal"><p class="mb-3 text-sm font-bold uppercase tracking-[.2em] text-amber">Bắt đầu trao đổi</p><h2 class="text-3xl font-black text-white md:text-4xl">Bạn đang cần tìm thiết bị nào?</h2><p class="mt-5 leading-7 text-slate-300">Gửi thông tin nhu cầu. Đội ngũ Khang Minh sẽ có cơ sở để tư vấn phù hợp hơn.</p><div class="mt-7 rounded-xl border border-amber/20 bg-amber/10 p-4 text-sm text-amber-100">Thông tin liên hệ chính thức sẽ được cập nhật sau khi có hồ sơ doanh nghiệp được xác nhận.</div></div><form id="contact-form" class="reveal rounded-2xl border border-white/10 bg-ink/60 p-5 md:p-6" novalidate><div class="grid gap-4 sm:grid-cols-2"><div><label for="name" class="mb-2 block text-sm font-medium text-slate-200">Họ và tên <span class="text-amber">*</span></label><input id="name" name="name" required class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500" placeholder="Nguyễn Văn A" aria-describedby="name-error" /><p id="name-error" class="mt-1 hidden text-xs text-red-300"></p></div><div><label for="company" class="mb-2 block text-sm font-medium text-slate-200">Doanh nghiệp</label><input id="company" name="company" class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500" placeholder="Tên công ty" /></div><div><label for="email" class="mb-2 block text-sm font-medium text-slate-200">Email <span class="text-amber">*</span></label><input id="email" name="email" type="email" required class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500" placeholder="email@congty.vn" aria-describedby="email-error" /><p id="email-error" class="mt-1 hidden text-xs text-red-300"></p></div><div><label for="phone" class="mb-2 block text-sm font-medium text-slate-200">Số điện thoại</label><input id="phone" name="phone" type="tel" class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500" placeholder="09xx xxx xxx" /></div></div><div class="mt-4"><label for="category" class="mb-2 block text-sm font-medium text-slate-200">Nhóm thiết bị quan tâm</label><select id="category" name="category" class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white"><option value="">Chọn nhóm thiết bị</option><option>Điện công nghiệp</option><option>Tự động hóa</option><option>Đo lường & điều khiển</option><option>Khí nén & thủy lực</option><option>Cơ khí, phụ tùng & vật tư</option></select></div><div class="mt-4"><label for="message" class="mb-2 block text-sm font-medium text-slate-200">Mô tả nhu cầu</label><textarea id="message" name="message" rows="4" class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500" placeholder="Mô tả ngắn về thiết bị hoặc hệ thống cần tư vấn..."></textarea></div><button type="submit" class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-amber px-5 py-3.5 font-bold text-ink transition hover:bg-amber-300">Gửi yêu cầu tư vấn <i data-lucide="send" class="ml-2 h-4 w-4"></i></button><p id="form-status" class="mt-4 hidden rounded-lg p-3 text-sm" role="status" aria-live="polite"></p></form></div></div></section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-[#05101a] px-5 py-12"><div class="section-shell grid gap-10 md:grid-cols-3 lg:px-0"><div><a href="#top" class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber text-ink"><i data-lucide="factory" class="h-5 w-5"></i></span><span class="font-extrabold text-white">KHANG <span class="text-amber">MINH</span></span></a><p class="mt-4 max-w-xs text-sm leading-6 text-slate-400">Thiết bị công nghiệp và giải pháp kỹ thuật theo nhu cầu vận hành.</p></div><div><h3 class="font-bold text-white">Điều hướng</h3><div class="mt-4 grid grid-cols-2 gap-3 text-sm text-slate-400"><a href="#about" class="hover:text-amber">Giới thiệu</a><a href="#products" class="hover:text-amber">Sản phẩm</a><a href="#industries" class="hover:text-amber">Ngành phục vụ</a><a href="#contact" class="hover:text-amber">Liên hệ</a></div></div><div><h3 class="font-bold text-white">Thông tin liên hệ</h3><ul class="mt-4 space-y-2 text-sm leading-7 text-slate-300"><li class="flex items-center gap-2"><i data-lucide="map-pin" class="h-4 w-4 text-amber"></i>B11/10 tổ 2, Khu phố 5, phường Tam Hiệp, tỉnh Đồng Nai</li><li class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4 text-amber"></i><a href="tel:+84909362299" class="hover:text-amber">+84 909 36 22 99</a></li><li class="flex items-center gap-2"><i data-lucide="mail" class="h-4 w-4 text-amber"></i><a href="mailto:tbkhangminh@gmail.com" class="hover:text-amber">tbkhangminh@gmail.com</a></li><li class="flex items-center gap-2"><i data-lucide="building-2" class="h-4 w-4 text-amber"></i>MST: 3604018823</li></ul></div></div><div class="section-shell mt-10 border-t border-white/10 pt-5 text-xs text-slate-500 lg:px-0">© 2025 Công ty TNHH Thiết Bị Công Nghiệp Khang Minh. Bảo lưu mọi quyền.</div></footer>
+
+    <script>
+      const iconLibrary = window.lucide;
+      if (iconLibrary) iconLibrary.createIcons();
+      const header = document.getElementById('site-header');
+      const menuButton = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const setMenu = (open) => {
+        if (!menu || !menuButton) return;
+        menu.classList.toggle('hidden', !open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+        if (menuIcon) { menuIcon.setAttribute('data-lucide', open ? 'x' : 'menu'); menuIcon.style.transform = open ? 'rotate(90deg)' : ''; if (iconLibrary) iconLibrary.createIcons(); }
+      };
+      menuButton?.addEventListener('click', () => setMenu(menu?.classList.contains('hidden')));
+      document.querySelectorAll('.mobile-link').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+      const updateHeader = () => header?.classList.toggle('nav-scrolled', window.scrollY > 24);
+      updateHeader(); window.addEventListener('scroll', updateHeader, { passive: true });
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver((entries, current) => { entries.forEach((entry) => { if (entry.isIntersecting) { const el = entry.target; const revealIndex = [...revealItems].indexOf(el); const animation = el.closest('#process') ? 'animate__fadeInLeft' : (el.querySelector('h3') ? ['animate__fadeInLeft', 'animate__fadeInUp', 'animate__fadeInRight'][revealIndex % 3] : 'animate__fadeInUp'); el.classList.add('animate__animated', el.dataset.animation || animation); if (el.dataset.delay) el.style.animationDelay = el.dataset.delay; else if (el.querySelector('h3')) el.style.animationDelay = `${(revealIndex % 3 + 1) * 100}ms`; el.classList.add('is-visible'); current.unobserve(el); } }); }, { threshold: .2 });
+        revealItems.forEach((item) => observer.observe(item));
+      } else revealItems.forEach((item) => item.classList.add('is-visible'));
+      document.querySelectorAll('.accordion-trigger').forEach((trigger) => trigger.addEventListener('click', () => {
+        const item = trigger.closest('.accordion-item'); const expanded = trigger.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.accordion-item').forEach((other) => { if (other !== item) { other.classList.remove('active'); other.querySelector('.accordion-trigger')?.setAttribute('aria-expanded', 'false'); } });
+        item?.classList.toggle('active', !expanded); trigger.setAttribute('aria-expanded', String(!expanded));
+      }));
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.slide-dot');
+      let currentSlide = 0;
+      let slideTimer;
+      const showSlide = (index) => {
+        if (!slides.length) return;
+        currentSlide = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === currentSlide));
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentSlide);
+          dot.classList.toggle('bg-amber', i === currentSlide);
+          dot.classList.toggle('bg-white/50', i !== currentSlide);
+        });
+      };
+      const startSlideshow = () => { if (slides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) slideTimer = window.setInterval(() => showSlide(currentSlide + 1), 5000); };
+      dots.forEach((dot) => dot.addEventListener('click', () => { showSlide(Number(dot.dataset.slide || 0)); window.clearInterval(slideTimer); startSlideshow(); }));
+      showSlide(0); startSlideshow();
+      const form = document.getElementById('contact-form');
+      form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('name'); const email = document.getElementById('email'); const status = document.getElementById('form-status');
+        const errors = { name: document.getElementById('name-error'), email: document.getElementById('email-error') }; const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+        [name, email].forEach((field) => field?.setAttribute('aria-invalid', 'false')); Object.values(errors).forEach((error) => { if (error) { error.textContent = ''; error.classList.add('hidden'); } });
+        let valid = true;
+        if (!name.value.trim()) { valid = false; errors.name.textContent = 'Vui lòng nhập họ và tên.'; errors.name.classList.remove('hidden'); name.setAttribute('aria-invalid', 'true'); }
+        if (!emailOk) { valid = false; errors.email.textContent = 'Vui lòng nhập email hợp lệ.'; errors.email.classList.remove('hidden'); email.setAttribute('aria-invalid', 'true'); }
+        if (!valid) { status.className = 'mt-4 rounded-lg bg-red-500/10 p-3 text-sm text-red-200'; status.textContent = 'Vui lòng kiểm tra lại thông tin bắt buộc.'; return; }
+        status.className = 'mt-4 rounded-lg bg-green-500/10 p-3 text-sm text-green-200'; status.textContent = 'Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ liên hệ trong thời gian sớm nhất.'; form.reset();
+      });
+    </script>
+  </body>
+</html>
